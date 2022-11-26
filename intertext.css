@@ -1,0 +1,220 @@
+body{
+    background-color: #D2CCA1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.h1{
+    margin-top: 0;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: calc(1.375rem + 1.5vw);
+}
+.not-mobile{
+    display: none;
+}
+.pd10{
+    padding: 10px;
+}
+.pt10{
+    padding-top: 10px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.flex-1{
+    flex: 1;
+}
+.flex-grow{
+    flex-grow: 1;
+}
+
+.form-group {
+    padding-top: calc(.5rem - 1px * 2);
+    padding-bottom: calc(.5rem - 1px * 2);
+    margin-bottom: 0;
+}
+
+#coming-soon{
+    background-color: aliceblue;
+    min-height: 400px;
+}
+
+/* Navbar */
+.navbar{
+    background-color: #4B6858;
+    padding-left: 10px;
+}
+.navbar-brand{
+    font-size: xx-large;
+    padding: 0;
+}
+#login-error{
+    background-color: #53131E;
+}
+.text-error{
+    color: #53131E;
+}
+#intertext-nav-sm{
+    background-color: #A9B3CE;
+}
+#intertext-nav-md .btn{
+    margin-left: 10px;
+    margin-top: 5px;
+    max-width: 170px;
+}
+
+/* Activity */
+.activity-item{
+    margin: 10px;
+    background-color: #A9B3CE;
+    border-color: #b0b8ce;
+    border-style: solid;
+    border-width: 1px;
+}
+.info-box .update{
+    float: left;
+}
+.info-box .date{
+    float: right;
+}
+
+/* Projects + Jobs */
+#projects-container-sm, #jobs-container-sm{
+    background-image: url('images/wood-background.jpg');
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    border-top: 3px solid #4A442D;
+}
+.project-items{
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+.project-item, .job-item{
+    color: aliceblue;
+    background-color: #4b6858d5;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #4B6858;
+    border-radius: 6px;
+}
+.project-link, .job-link{
+    padding-right: 10px;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.project-role, .job-status{
+    float: right;
+}
+.project-owner, .job-project{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Work */
+#project-main, #text-main{
+    flex: 1 1 auto;
+}
+#work-container{
+    background-color: #A9B3CE;
+    flex: 1 1 auto;
+}
+.text-item, .project-job-item{
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+
+/* CRUD */
+#create-main{
+    background-color: #A9B3CE;
+    flex: 1 1 auto;
+}
+.create-form{
+    padding-top: 5px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* Footer */
+#footer{
+    background-color: #726c56;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#foot-title{
+    padding-top: 2px;
+}
+#foot-links a{
+    display: flex;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #212529;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    vertical-align: middle;
+}
+
+@media(min-width: 768px){
+    .mobile-only{
+        display: none;
+    }
+    .not-mobile{
+        display: flex;
+    }
+    /* Navbar */
+    #intertext-nav-md, #nav-login-form, #nav-login-form-sm{
+        display: flex;
+        flex-direction: row;
+    }
+    #intertext-nav-md .btn, #intertext-nav-md .form-control{
+        margin-left: 10px;
+        margin-top: 5px;
+        max-width: 170px;
+    }
+    
+    /* Activity */
+    
+
+    /* Side Bar */
+    #sidebar{
+        display: flex;
+        flex-direction: column;
+        border-right: 3px solid #4A442D;
+        background-image: url('images/wood-background.jpg');
+        background-color: #BA8C63;
+    }
+    #projects-container, #jobs-container{
+        padding-bottom: 15px;
+    }
+    #projects-container{
+        border-bottom: 3px solid #4A442D;
+    }
+
+    /* Footer */
+    #footer{
+        max-height: 110px;
+    }
+    #foot-links{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 730px;
+        padding-left: 1%;
+    }
+}
+
+@media(min-width: 992px){
+
+}

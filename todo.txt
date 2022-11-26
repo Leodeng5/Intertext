@@ -1,0 +1,17 @@
+SKIPPED:
+    nav.php
+        popup invalid credentials upon login fail.
+        "real navbar"
+    create_project.php
+        make creator maintainer mandatory
+    project.php
+        Access validation (can't access project via URL unless permitted)
+        Updates - link item to relevant job
+        Maintainer Only - Job Source/Version Control
+    text.php
+        Body display pagination/scroll?
+        Maintainer Only - Direct Edit
+    job.php
+        Assigned Contributor Only - edit contributor (delegate job to someone else)
+    job_review.php
+        coming soon
